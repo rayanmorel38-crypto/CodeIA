@@ -1,0 +1,38 @@
+{
+  "engine": {
+    "name": "python_engine",
+    "version": "1.0.0",
+    "description": "Moteur Python pour l'exécution de tâches d'analyse de données et ML"
+  },
+  "modules": {
+    "data_analysis": [
+      "cleaner",
+      "transformer",
+      "aggregator",
+      "statistics"
+    ],
+    "ml": [
+      "prediction",
+      "anomaly_detection",
+      "llm_agent"
+    ],
+    "automation": [
+      "report_generator",
+      "workflow_runner",
+      "file_manager",
+      "code_generator"
+    ]
+  },
+  "dispatcher": {
+    "auto_register": true,
+    "module_prefix": "core.engines.python_engine"
+  },
+  "task_manager": {
+    "default_priority": "medium",
+    "max_concurrent_tasks": 10
+  },
+  "logging": {
+    "level": "INFO",
+    "file": "logs/python_engine.log"
+  }
+}
